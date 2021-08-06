@@ -1,11 +1,11 @@
-//Currency converter from UZS to USD or EUR
+const money = prompt("Pul miqdorini kiriting(UZSda): ");
+const ticket = 500 * 9433.34;
+const hotelFee = 250 * 9433.34;
+const trip = 120 * 10354.03;
+const sum = ticket + hotelFee + trip;
 
-const uzs=prompt("Pul miqdorini kiriting(UZSda): ");
-const usd= uzs / 10654;
-const eur = uzs / 12674;
-
-const converter = (currency, value, sign) => {
-  alert(`${currency.toUpperCase()}da\n\tYaxlitlanmagan: ${sign}${value}\n\tYaxlitlangan: ${sign}${Math.round(value)}`);
+if (money >= sum) {
+  console.log("Oq yo’l, Alisher!");
+} else {
+  console.log("Alisher, ozgina sabr qilish kerak bo’lar ekan.");
 }
-converter("usd", usd, "$");
-converter("eur", eur, "€");
