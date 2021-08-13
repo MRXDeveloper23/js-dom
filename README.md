@@ -1,3 +1,3 @@
-# Compute
+# Guessing
 
-Compute expenses
+Try to find guessing number
